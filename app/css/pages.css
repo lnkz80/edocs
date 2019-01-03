@@ -1,0 +1,35 @@
+/* Adding item page */
+#newitem {
+  color: #555; }
+  #newitem input, #newitem label, #newitem textarea, #newitem select {
+    display: block; }
+  #newitem label {
+    font-size: 14px;
+    color: #555; }
+  #newitem input[type=text], #newitem textarea, #newitem select {
+    width: 50%;
+    color: #316A9F;
+    border: 1px solid #ddd; }
+  #newitem input[type=submit] {
+    padding: 5px 35px;
+    background-color: #ddd;
+    border: none; }
+    #newitem input[type=submit]:hover {
+      background-color: #ff8000;
+      color: #fff; }
+  #newitem input:focus, #newitem textarea:focus, #newitem select:focus {
+    outline: none !important;
+    border: 1px solid #ff8000;
+    -webkit-box-shadow: 0 0 3px #ff8000;
+            box-shadow: 0 0 3px #ff8000; }
+  #newitem select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    padding: 2px 0 2px 5px;
+    -webkit-border-radius: 0;
+            border-radius: 0; }
+  #newitem textarea {
+    height: 50px; }
+
+/* EOF Adding item page */

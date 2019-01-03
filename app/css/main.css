@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%; }
+
+.head {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
+
+.footer {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
+
+.page-head {
+  background-color: #ABBCCC;
+  border-left: 16px solid #6A757F; }
+  .page-head .head-logo img {
+    height: 72px;
+    width: 72px; }
+  .page-head .horizontal-mnu {
+    vertical-align: middle;
+    display: block; }
+    .page-head .horizontal-mnu .nav a {
+      font-size: 18px;
+      color: #45637F; }
+      .page-head .horizontal-mnu .nav a:hover {
+        color: #fff; }
+    .page-head .horizontal-mnu img {
+      width: 48px;
+      height: 48px; }
+
+.submnu {
+  background-color: #D6EBFF;
+  border-left: 16px solid #45637F; }
+
+img.logo {
+  width: 96px;
+  height: 96px; }
+
+.submnu li:hover {
+  background-color: #45637F;
+  -webkit-box-shadow: 0 2px 0 #45637F;
+          box-shadow: 0 2px 0 #45637F; }
+  .submnu li:hover a {
+    color: #fff; }
+
+.page-content .left-mnu {
+  margin-top: 20px;
+  padding: 0; }
+  .page-content .left-mnu .nav-item {
+    vertical-align: middle; }
+    .page-content .left-mnu .nav-item img {
+      max-width: 24px;
+      height: 24px;
+      float: left; }
+    .page-content .left-mnu .nav-item a {
+      float: left;
+      font-size: 14px;
+      line-height: 10px; }
+  .page-content .left-mnu li {
+    margin-top: 5px;
+    padding: 5px 0 5px 20px; }
+    .page-content .left-mnu li:hover {
+      background-color: #D6EBFF; }
+  .page-content .left-mnu li.active {
+    background-color: #ABBCCC; }
+    .page-content .left-mnu li.active a {
+      color: #fff; }
+
+.page-content .content {
+  padding: 20px 40px 0 40px; }
+  .page-content .content p {
+    color: #6A757F;
+    text-align: justify; }
+
+.page-footer {
+  height: 50px;
+  background-color: #6A757F;
+  width: 100%;
+  margin: 0 auto;
+  margin: 0 auto; }
+  .page-footer .foot {
+    color: #D6EBFF; }

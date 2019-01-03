@@ -1,0 +1,122 @@
+@import "colors"
+
+*
+	margin: 0
+	padding: 0
+html,body
+	height: 100%
+
+body
+	padding: 0
+	margin: 0
+	font-size: 14px
+	font-family: "Open Sans", sans-serif
+
+.wrapper
+	display: flex
+	flex-direction: column
+	height: 100%
+
+.head
+	flex: 1 0 auto
+
+.footer
+	flex: 0 0 auto
+
+.page-head
+	background-color: $SoftGrey
+	border-left: 16px solid $DarkGrey
+	.head-logo
+		img
+			height: 72px
+			width: 72px
+	//padding: 20px
+	//background-color:
+	.horizontal-mnu
+		vertical-align: middle
+		display: block
+		.nav
+			&-item
+			a
+				font-size: 18px
+				//margin: 16px 16px 0 0
+				//padding-left: 15px
+				color: $DarkSky
+				//border-left: 10px solid $DarkSky
+				&:hover
+					color: #fff
+		img
+			width: 48px
+			height: 48px
+.submnu
+	background-color: $Sky
+	border-left: 16px solid $DarkSky
+
+img.logo
+	width: 96px
+	height: 96px
+
+.submnu
+	li
+		&:hover
+			background-color: $DarkSky
+			box-shadow: 0 2px 0 $DarkSky
+			a
+				color: #fff
+.page-content
+	.left-mnu
+		margin-top: 20px
+		padding: 0
+		.nav-item
+			vertical-align: middle
+			img
+				max-width: 24px
+				height: 24px
+				float: left
+			a
+				float: left
+				font-size: 14px
+				line-height: 10px
+		li
+			margin-top: 5px
+			padding: 5px 0 5px 20px
+			&:hover
+				background-color: $Sky
+		li.active
+			background-color: $SoftGrey
+			a
+				color: #fff
+
+
+			//a
+			//	color: $DarkSky
+
+	.content
+		padding: 20px 40px 0 40px
+		p
+			color: $DarkGrey
+			text-align: justify
+.page-footer
+	height: 50px
+	background-color: $DarkGrey
+	width: 100%
+	margin: 0 auto
+	margin: 0 auto
+
+	.foot
+
+		color: $Sky
+
+
+
+
+
+
+
+
+
+
+
+
+
+
