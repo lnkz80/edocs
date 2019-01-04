@@ -3,6 +3,18 @@
 
 class Lib
 {
+
+    public static function getLibMVOList(){
+        $db = Db::getConnection();
+        $result = $db->query('SELECT * FROM lib_mvo');
+        $result->setFetchMode(PDO::FETCH_ASSOC);
+        $libItem = $result->fetch();
+
+        return $libMVO;
+    }
+
+
+
     public static function getLibItemById($id){
         $id = intval($id);
 

@@ -20,17 +20,18 @@ class Menu
         return $mnuList;
     }
 
-    public static function getLeftMenuList(){
+    public static function getLeftMenuList($id){
         $db = Db::getConnection();
 
         $mnuList = array();
-        $result = $db->query('SELECT * FROM lib_do WHERE cat_id =1 ORDER BY sort ASC');
+        $result = $db->query('SELECT * FROM lib_do WHERE cat_id ='.$id.' ORDER BY sort ASC');
 
         $i = 0;
 
         while ($row = $result->fetch()){
             $mnuList[$i]['id'] = $row['id'];
             $mnuList[$i]['name'] = $row['name'];
+            $mnuList[$i]['path'] = $row['path'];
             $i++;
         }
         return $mnuList;
