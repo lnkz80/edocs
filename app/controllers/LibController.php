@@ -25,6 +25,7 @@ class LibController
    public function actionView($id){
        $mnuarr = Menu::getMenuList(1,0);
        $submnuarr = Menu::getMenuList(2,4);
+       $mvoarr = Lib::getLibMVOList();
        include ROOT . '/views/layouts/header.php';
        include ROOT . '/views/lib/view.php';
        include ROOT . '/views/layouts/footer.php';

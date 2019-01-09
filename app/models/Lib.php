@@ -7,8 +7,14 @@ class Lib
     public static function getLibMVOList(){
         $db = Db::getConnection();
         $result = $db->query('SELECT * FROM lib_mvo');
-        $result->setFetchMode(PDO::FETCH_ASSOC);
-        $libItem = $result->fetch();
+        $i = 0;
+        while($row = $result->fetch()){
+            $libMVO[$i]['id'] = $row['id'];
+            $libMVO[$i]['name'] = $row['name'];
+            $libMVO[$i]['department'] = $row['department'];
+            $libMVO[$i]['location'] = $row['location'];
+            $i++;
+        };
 
         return $libMVO;
     }
