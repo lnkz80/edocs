@@ -8,5 +8,7 @@ return array(
     'item/new' => 'item/newitem',
     'item/([a-z]+)' => 'item/view/$1',
     'item' => 'item/index',
+    'cartridges/actions' => 'cartridges/actions',
+    'cartridges' => 'cartridges/index',
     '' => 'site/index'
 );
