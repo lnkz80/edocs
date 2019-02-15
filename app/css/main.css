@@ -97,6 +97,21 @@ img.logo {
     color: #6A757F;
     text-align: justify; }
 
+fieldset {
+  border: 2px solid #D6EBFF;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+  fieldset legend {
+    color: #88C5FF;
+    font-size: 16px;
+    padding: 0 10px 0 10px;
+    width: auto; }
+
+.input-group-text img {
+  height: 15px;
+  width: 10px; }
+
 .page-footer {
   height: 50px;
   background-color: #6A757F;
