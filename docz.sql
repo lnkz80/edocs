@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Янв 04 2019 г., 17:12
+-- Время создания: Фев 18 2019 г., 17:59
 -- Версия сервера: 5.6.38
 -- Версия PHP: 7.2.0
 
@@ -60,7 +60,7 @@ CREATE TABLE `lib_cat` (
 
 INSERT INTO `lib_cat` (`id`, `name`, `level`, `cat_parent`, `color`, `icon`, `path`) VALUES
 (1, 'Активы', 1, 0, 1, 1, 'item'),
-(2, 'Картриджи', 1, 0, 2, 1, 'item/cartridges'),
+(2, 'Картриджи', 1, 0, 2, 1, 'cartridges'),
 (3, 'Документы', 1, 0, 2, 2, 'docs'),
 (4, 'Справочники', 1, 0, 3, 3, 'lib'),
 (5, 'Планирование', 1, 0, 4, 4, 'plan'),
@@ -118,7 +118,9 @@ INSERT INTO `lib_do` (`id`, `name`, `cat_id`, `path`, `sort`) VALUES
 (2, 'Ввод в эксплуатацию', 1, '', 3),
 (3, 'Перемещение', 1, '', 4),
 (4, 'Списание', 1, '', 6),
-(5, 'Ремонт', 1, '', 5);
+(5, 'Ремонт', 1, '', 5),
+(6, 'Движение картриджей', 2, '', 1),
+(7, 'Журнал', 2, '', 2);
 
 -- --------------------------------------------------------
 
@@ -306,7 +308,7 @@ ALTER TABLE `jrnl_items`
 -- AUTO_INCREMENT для таблицы `lib_do`
 --
 ALTER TABLE `lib_do`
-  MODIFY `id` tinyint(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` tinyint(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT для таблицы `lib_items`
