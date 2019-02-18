@@ -1,8 +1,9 @@
 <h3>Операции с картриджами</h3>
 <hr>
-<form action="">
+<form action="" class="cartform">
+    <?php for($i=1; $i<5; $i++): ?>
     <fieldset class="form-group">
-        <legend>Картридж №1</legend>
+        <legend>Картридж №<?php echo $i;?></legend>
 
     <div class="form-row">
         <div class="col-2">
@@ -64,4 +65,6 @@
         </div>
     </div>
     </fieldset>
+    <?php endfor; ?>
+    <div class="sbmtwrapper"><input type="submit" value="Сохранить"></div>
 </form>

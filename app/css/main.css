@@ -97,6 +97,28 @@ img.logo {
     color: #6A757F;
     text-align: justify; }
 
+form select, form input[placeholder] {
+  font-size: 12px; }
+
+form input {
+  height: -webkit-calc(2.25rem + 2px);
+  height: calc(2.25rem + 2px); }
+
+form .custom-select {
+  padding: .375rem 0.75rem .375rem .75rem;
+  -webkit-background-size: 6px 6px;
+  background-size: 6px 6px; }
+
+form div.input-group-prepend i {
+  font-size: 12px; }
+
+form input[type=submit] {
+  text-align: center;
+  padding: 0 20px; }
+
+form .sbmtwrapper {
+  text-align: center; }
+
 fieldset {
   border: 2px solid #D6EBFF;
   padding: 10px;
