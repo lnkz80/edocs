@@ -1,6 +1,20 @@
 <h3>Операции с картриджами</h3>
 <hr>
 <form action="" class="cartform">
+    <select class="nselect-1" name="pets" data-title="Chose your pet">
+        <option value="1">Cat</option>
+        <option value="2">Dog</option>
+        <option value="3">Duck</option>
+        <option value="1">Cat</option>
+        <option value="2">Dog</option>
+        <option value="3">Duck</option>
+        <option value="1">Cat</option>
+        <option value="2">Dog</option>
+        <option value="3">Duck</option>
+        <option value="1">Cat</option>
+        <option value="2">Dog</option>
+        <option value="3">Duck</option>
+    </select>
     <?php for($i=1; $i<5; $i++): ?>
     <fieldset class="form-group">
         <legend>Картридж №<?php echo $i;?></legend>
@@ -12,7 +26,16 @@
                     <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-male"></i>&nbsp;<i class="fas fa-arrow-right"></i></label>
                 </div>
                 <select class="custom-select" id="inputGroupSelect01">
-                    <option selected>МВО</option>
+<!--                    <option selected>МВО</option>-->
+                    <option value="1">Иванов И.И.</option>
+                    <option value="2">Петров П.П.</option>
+                    <option value="3">Сидоров А.А.</option>
+                    <option value="1">Иванов И.И.</option>
+                    <option value="2">Петров П.П.</option>
+                    <option value="3">Сидоров А.А.</option>
+                    <option value="1">Иванов И.И.</option>
+                    <option value="2">Петров П.П.</option>
+                    <option value="3">Сидоров А.А.</option>
                     <option value="1">Иванов И.И.</option>
                     <option value="2">Петров П.П.</option>
                     <option value="3">Сидоров А.А.</option>
@@ -66,5 +89,6 @@
     </div>
     </fieldset>
     <?php endfor; ?>
+
     <div class="sbmtwrapper"><input type="submit" value="Сохранить"></div>
 </form>
