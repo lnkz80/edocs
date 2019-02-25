@@ -7,9 +7,5 @@ $(document).ready(function() {
 $(function(){
 
     $('.nselect-1').nSelect();
-    $(".cartform").mCustomScrollbar({
-        theme: "dark"
-        //,horizontal:400
-    });
 
 });
