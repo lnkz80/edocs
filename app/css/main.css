@@ -101,8 +101,8 @@ form select, form input[placeholder] {
   font-size: 12px; }
 
 form input {
-  height: -webkit-calc(2.25rem + 2px);
-  height: calc(2.25rem + 2px); }
+  height: -webkit-calc(2.5rem + 2px);
+  height: calc(2.5rem + 2px); }
 
 form .custom-select {
   padding: .375rem 0.75rem .375rem .75rem;

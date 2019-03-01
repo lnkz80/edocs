@@ -1,6 +1,7 @@
 <?php
 
 include_once ROOT . '/models/Cartridges.php';
+include_once ROOT.'/models/Lib.php';
 include_once ROOT . '/models/Menu.php';
 
 class CartridgesController
@@ -20,6 +21,8 @@ class CartridgesController
         $mnuarr = Menu::getMenuList(1,0);
         $submnuarr = Menu::getMenuList(2,1);
         $lmnuarr = Menu::getLeftMenuList(2);
+        $mvoarr = Lib::getLibMVOList();
+        $cartarr = Cartridges::getCartList();
         include ROOT . '/views/layouts/header.php';
         include ROOT . '/views/cartridges/actions.php';
         include ROOT . '/views/layouts/footer.php';

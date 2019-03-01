@@ -1,7 +1,7 @@
 <h3>Операции с картриджами</h3>
 <hr>
-<form action="" class="cartform">
-    <?php for($i=1; $i<3; $i++): ?>
+<form action="/cartridges/" method="post" class="cartform">
+    <?php for($i=1; $i<4; $i++): ?>
     <fieldset class="form-group">
         <legend>Картридж №<?php echo $i;?></legend>
 
@@ -11,20 +11,12 @@
                 <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-male"></i>&nbsp;<i class="fas fa-arrow-right"></i></label>
                 </div>
-                <select class="nselect-1" name="MVO_out" data-title="MBO">
+                <select class="nselect-1" name="MVO_out[]" data-title="MBO">
                     <option selected>Выбрать МВО</option>
-                    <option value="1">Иванов И.И.</option>
-                    <option value="2">Петров П.П.</option>
-                    <option value="3">Сидоров А.А.</option>
-                    <option value="1">Иванов И.И.</option>
-                    <option value="2">Петров П.П.</option>
-                    <option value="3">Сидоров А.А.</option>
-                    <option value="1">Иванов И.И.</option>
-                    <option value="2">Петров П.П.</option>
-                    <option value="3">Сидоров А.А.</option>
-                    <option value="1">Иванов И.И.</option>
-                    <option value="2">Петров П.П.</option>
-                    <option value="3">Сидоров А.А.</option>
+                    <?php foreach ($mvoarr as $item=>$value): ?>
+                    <option value="<?php echo $value['id'] ?>"><?php echo $value['id']." ".$value['name'] ?></option>
+                    <?php endforeach; ?>
+
                 </select>
             </div>
         </div>
@@ -33,48 +25,25 @@
                 <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect02"><i class="fas fa-arrow-right"></i>&nbsp;<i class="fas fa-male"></i></label>
                 </div>
-                <select class="nselect-1" name="MVO_in" data-title="MBO">
+                <select class="nselect-1" name="MVO_in[]" data-title="MBO">
                     <option selected>Выбрать МВО</option>
-                    <option value="1">Иванов И.И.</option>
-                    <option value="2">Петров П.П.</option>
-                    <option value="3">Сидоров А.А.</option>
-                    <option value="1">Иванов И.И.</option>
-                    <option value="2">Петров П.П.</option>
-                    <option value="3">Сидоров А.А.</option>
-                    <option value="1">Иванов И.И.</option>
-                    <option value="2">Петров П.П.</option>
-                    <option value="3">Сидоров А.А.</option>
-                    <option value="1">Иванов И.И.</option>
-                    <option value="2">Петров П.П.</option>
-                    <option value="3">Сидоров А.А.</option>
-                    <option value="1">Иванов И.И.</option>
-                    <option value="2">Петров П.П.</option>
-                    <option value="3">Сидоров А.А.</option>
-                    <option value="1">Иванов И.И.</option>
-                    <option value="2">Петров П.П.</option>
-                    <option value="3">Сидоров А.А.</option>
+                    <?php foreach ($mvoarr as $item=>$value): ?>
+                        <option value="<?php echo $value['id'] ?>"><?php echo $value['id']." ".$value['name'] ?></option>
+                    <?php endforeach; ?>
                 </select>
             </div>
         </div>
+
         <div class="col-2">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect03">#</label>
                 </div>
-                <select class="nselect-1" name="cart_num" data-title="CartNum">
+                <select class="nselect-1" name="invcode[]" data-title="Cartridge">
                     <option selected>Номер картриджа</option>
-                    <option value="1">1234</option>
-                    <option value="2">2345</option>
-                    <option value="3">3456</option>
-                    <option value="1">1234</option>
-                    <option value="2">2345</option>
-                    <option value="3">3456</option>
-                    <option value="1">1234</option>
-                    <option value="2">2345</option>
-                    <option value="3">3456</option>
-                    <option value="1">1234</option>
-                    <option value="2">2345</option>
-                    <option value="3">3456</option>
+                    <?php foreach ($cartarr as $item=>$value): ?>
+                        <option value="<?php echo $value['id'] ?>"><?php echo $value['invcode'] ?></option>
+                    <?php endforeach; ?>
                 </select>
             </div>
         </div>
@@ -85,7 +54,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1"><i class="far fa-edit"></i></span>
                 </div>
-                <input type="text" class="form-control" placeholder="Комментарий" aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="Комментарий" aria-label="Username" aria-describedby="basic-addon1" name="remarks[]">
             </div>
         </div>
         <div class="col-1" style="text-align: right;">
