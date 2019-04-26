@@ -1,7 +1,16 @@
 <h3>Операции с картриджами</h3>
 <hr>
-<form action="/cartridges/" method="post" class="cartform">
-    <?php for($i=1; $i<4; $i++): ?>
+
+<?php
+    if($res) {
+    echo "<p class='text-success'>Данные успешно внесены.</p>";
+    unset($_POST);
+    }
+    ?>
+
+
+<form action="#" method="post" class="cartform">
+    <?php for($i=1; $i<3; $i++): ?>
     <fieldset class="form-group">
         <legend>Картридж №<?php echo $i;?></legend>
 
@@ -58,11 +67,11 @@
             </div>
         </div>
         <div class="col-1" style="text-align: right;">
-            <a class="btn btn-danger" href="#">
+            <a class="btn btn-danger delbtn" href="#">
                 <i class="fas fa-window-close"></i></a>
         </div>
         <div class="col-1">
-            <a class="btn btn-success" href="#">
+            <a class="btn btn-success addbtn" href="#">
                 <i class="fas fa-plus-square"></i></a>
         </div>
     </div>
