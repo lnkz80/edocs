@@ -10,9 +10,16 @@
 
 
 <form action="#" method="post" class="cartform">
-    <?php for($i=1; $i<3; $i++): ?>
-    <fieldset class="form-group">
-        <legend>Картридж №<?php echo $i;?></legend>
+    <div class="sbmtwrapper">
+
+            <a class="btn btn-success addbtn" href="#">
+                <i class="fas fa-plus-square"></i></a>
+
+        <input type="submit" value="Сохранить">
+    </div>
+    <?php //for($i=1; $i<3; $i++): ?>
+    <fieldset class="form-group" id="fg">
+        <legend>Картридж №1<?php //echo $i;?></legend>
 
     <div class="form-row">
         <div class="col-2">
@@ -58,7 +65,7 @@
         </div>
 
 
-        <div class="col-4">
+        <div class="col-5">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1"><i class="far fa-edit"></i></span>
@@ -70,13 +77,10 @@
             <a class="btn btn-danger delbtn" href="#">
                 <i class="fas fa-window-close"></i></a>
         </div>
-        <div class="col-1">
-            <a class="btn btn-success addbtn" href="#">
-                <i class="fas fa-plus-square"></i></a>
-        </div>
+
     </div>
     </fieldset>
-    <?php endfor; ?>
+    <?php //endfor; ?>
 
-    <div class="sbmtwrapper"><input type="submit" value="Сохранить"></div>
+
 </form>
