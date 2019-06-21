@@ -106,30 +106,33 @@ form
 		padding: .375rem 0.75rem .375rem .75rem
 		-webkit-background-size: 6px 6px
 		background-size: 6px 6px
+		width: 200px
 	div.input-group-prepend
 		i
 			font-size: 10px
 	input[type=submit]
-		text-align: center
+		text-align: left
 		padding: 0 20px
 	.sbmtwrapper
-		text-align: center
+		text-align: left
+		margin: 30px 0 10px
 
-fieldset
-	border: 2px solid $Sky
-	padding: 10px
-	border-radius: 10px
-	legend
-		color: $Blue
-		font-size: 16px
-		padding: 0 10px 0 10px
-		width: auto
+	.nselect.nsOrange
+		width: 80%
+		background-color: $Sky
+		text-align: center
+	.nselect.nsOrange .nselect__head
+		font-size: 15px
+		font-weight: 700
+	.nselect.nsOrange._checked
+		background-color: #f2a621
 .input-group-text
 	img
 		height: 15px
 		width: 10px
 
 
+//FOOTER STYLES
 .page-footer
 	height: 50px
 	background-color: $DarkGrey
@@ -147,19 +150,3 @@ fieldset
 //Load Libs SASS
 @import mCustomScrollbar.sass
 @import jquery.nselect.sass
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

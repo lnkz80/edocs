@@ -15,13 +15,3 @@ function fldset(){
     out = "";
     return out;
 }
-
-
-$(".addbtn").click(function () {
-    that = $(this).parents(".cartform");
-    //those = fldset();
-    $('.form-group').clone().appendTo(".cartform");
-
-    //that.append(those);
-    }
-);

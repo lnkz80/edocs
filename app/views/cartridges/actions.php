@@ -11,26 +11,21 @@
 
 <form action="#" method="post" class="cartform">
     <div class="sbmtwrapper">
-
-            <a class="btn btn-success addbtn" href="#">
-                <i class="fas fa-plus-square"></i></a>
-
-        <input type="submit" value="Сохранить">
+        <button type="submit" class="btn btn-success"><i class="fas fa-save"></i></button>
+        <button type="reset" class="btn btn-danger"><i class="fas fa-window-close"></i></button>
     </div>
-    <?php //for($i=1; $i<3; $i++): ?>
-    <fieldset class="form-group" id="fg">
-        <legend>Картридж №1<?php //echo $i;?></legend>
 
+    <div class="form-group" id="fg">
     <div class="form-row">
         <div class="col-2">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-male"></i>&nbsp;<i class="fas fa-arrow-right"></i></label>
                 </div>
-                <select class="nselect-1" name="MVO_out[]" data-title="MBO">
-                    <option selected>Выбрать МВО</option>
+                <select class="nselect-1" name="MVO_out[]">
+
                     <?php foreach ($mvoarr as $item=>$value): ?>
-                    <option value="<?php echo $value['id'] ?>"><?php echo $value['id']." ".$value['name'] ?></option>
+                    <option value="<?php echo $value['id'] ?>"><?php echo $value['id'].". ".$value['name'] ?></option>
                     <?php endforeach; ?>
 
                 </select>
@@ -41,10 +36,10 @@
                 <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect02"><i class="fas fa-arrow-right"></i>&nbsp;<i class="fas fa-male"></i></label>
                 </div>
-                <select class="nselect-1" name="MVO_in[]" data-title="MBO">
-                    <option selected>Выбрать МВО</option>
+                <select class="nselect-1" name="MVO_in[]">
+
                     <?php foreach ($mvoarr as $item=>$value): ?>
-                        <option value="<?php echo $value['id'] ?>"><?php echo $value['id']." ".$value['name'] ?></option>
+                        <option value="<?php echo $value['id'] ?>"><?php echo $value['id'].". ".$value['name'] ?></option>
                     <?php endforeach; ?>
                 </select>
             </div>
@@ -62,25 +57,24 @@
                     <?php endforeach; ?>
                 </select>
             </div>
-        </div>
-
-
-        <div class="col-5">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1"><i class="far fa-edit"></i></span>
-                </div>
-                <input type="text" class="form-control" placeholder="Комментарий" aria-label="Username" aria-describedby="basic-addon1" name="remarks[]">
-            </div>
-        </div>
-        <div class="col-1" style="text-align: right;">
-            <a class="btn btn-danger delbtn" href="#">
-                <i class="fas fa-window-close"></i></a>
-        </div>
+        </div>        
 
     </div>
-    </fieldset>
-    <?php //endfor; ?>
+
+        <div class="row">
+            <div class="col-5">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="far fa-edit"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Комментарий" aria-label="Username"
+                           aria-describedby="basic-addon1" name="remarks[]">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
 
 
 </form>
